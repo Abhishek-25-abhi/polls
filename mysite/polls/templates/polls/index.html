@@ -1,3 +1,4 @@
+<body bgcolor="#33ECFF"
 {% if latest_question_list %}
     <ul>
     {% for question in latest_question_list %}
@@ -5,5 +6,9 @@
     {% endfor %}
     </ul>
 {% else %}
-    <p>No polls atttre available.</p>
+    <p>No polls are available.</p>
 {% endif %}
+</body>
+
+{% block content %}
+{% endblock %}

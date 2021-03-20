@@ -1,5 +1,15 @@
-<h1>{{ question.question_text }}</h1>
-
+<head>
+    <style>
+      div {
+        padding: 16px;
+        background-color:#33FFB5
+        }
+    </style>
+</head>
+  <div>
+      <h1>{{ question.question_text }}</h1>
+  </div>
+<body bgcolor="#FFF033 ">
 {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
 
 <form action="{% url 'polls:vote' question.id %}" method="post">
@@ -10,3 +20,4 @@
 {% endfor %}
 <input type="submit" value="Vote">
 </form>
+</body>
